@@ -45,7 +45,6 @@ const UpcomingSchedule = () => {
     <div className="col-span-12 md:col-span-6 lg:col-span-5 bg-white rounded-2xl p-5">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">The Upcoming Schedule</h3>
       
-      {/* Thursday appointments */}
       <div className="mb-4">
         <h4 className="text-sm text-gray-500 mb-2">On Thursday</h4>
         <div className="grid grid-cols-2 gap-4">
@@ -55,7 +54,6 @@ const UpcomingSchedule = () => {
         </div>
       </div>
       
-      {/* Saturday appointments */}
       <div>
         <h4 className="text-sm text-gray-500 mb-2">On Saturday</h4>
         <div className="grid grid-cols-2 gap-4">

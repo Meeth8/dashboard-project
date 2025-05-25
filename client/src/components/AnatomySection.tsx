@@ -24,7 +24,6 @@ const AnatomySection = () => {
       </div>
       
       <div className="relative flex justify-center">
-        {/* Anatomy image */}
         <svg 
           width="252" 
           height="288" 
@@ -32,14 +31,14 @@ const AnatomySection = () => {
           className="h-72 mx-auto"
         >
           <image 
-            href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMjUyIDI4OCIgZmlsbD0ibm9uZSI+PGcgaWQ9ImFuYXRvbXktbW9kZWwiPjxwYXRoIGQ9Ik0xMjEuNSAyOGMxMC41IDAgMTktOC41IDE5LTE5cy04LjUtMTktMTktMTktMTkgOC41LTE5IDE5IDguNSAxOSAxOSAxOXoiIGZpbGw9IiNmNGEyNjEiLz48cGF0aCBkPSJNMTU3LjUgMjRoLTcydjQwaDcyVjI0eiIgZmlsbD0iI2U1NjM1MyIvPjxwYXRoIGQ9Ik0xNTcuNSA2NGgtNzJ2ODRoNzJWNjR6IiBmaWxsPSIjZWM5ZTZmIi8+PHBhdGggZD0iTTE1Ny41IDE0OGgtNzJ2NjBoNzJ2LTYweiIgZmlsbD0iI2U3YjY5ZSIvPjxwYXRoIGQ9Ik0xNTcuNSAyMDhoLTcydjgwaDcydi04MHoiIGZpbGw9IiNlNzlmOGMiLz48cGF0aCBkPSJNMTMzLjUgOTJoLTI0djI0aDI0Vjkyem0wIDQwaC0yNHYyNGgyNHYtMjR6bTI0LTQwaC0yNHYyNGgyNFY5MnptMCA0MGgtMjR2MjRoMjR2LTI0eiIgZmlsbD0iI2RiMzQyZSIvPjxwYXRoIGQ9Ik0xMjEuNSAyMzJjNi42IDAgMTItNS40IDEyLTEycy01LjQtMTItMTItMTItMTIgNS40LTEyIDEyIDUuNCAxMiAxMiAxMnptMjQgMTJjNi42IDAgMTItNS40IDEyLTEycy01LjQtMTItMTItMTItMTIgNS40LTEyIDEyIDUuNCAxMiAxMiAxMnptLTQ4IDBjNi42IDAgMTItNS40IDEyLTEycy01LjQtMTItMTItMTItMTIgNS40LTEyIDEyIDUuNCAxMiAxMiAxMnoiIGZpbGw9IiNkYjM0MmUiLz48L2c+PC9zdmc+" 
-            width="252" 
-            height="288"
+            href="https://images.vexels.com/content/141930/preview/muscular-system-anatomy-human-body-71cfc9.png" 
+            width="270" 
+            height="280"
             alt="Human anatomy illustration"
           />
         </svg>
         
-        {/* Health Indicators */}
+        
         {healthData.indicators.map((indicator) => (
           <div 
             key={indicator.id}
@@ -51,7 +50,7 @@ const AnatomySection = () => {
               backgroundColor: indicator.label === 'Healthy Heart' ? '#38b249' : indicator.label === 'Healthy Leg' ? '#00c9c8' : '#ff3e3e'
             }}
           >
-            {indicator.icon === 'heart' && (
+            {indicator.icon === '' && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-3 w-3 mr-1"
@@ -67,7 +66,7 @@ const AnatomySection = () => {
                 />
               </svg>
             )}
-            {indicator.icon === 'bone' && (
+            {indicator.icon === '' && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-3 w-3 mr-1"

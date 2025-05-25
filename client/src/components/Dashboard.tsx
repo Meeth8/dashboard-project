@@ -11,17 +11,12 @@ import ActivityFeed from "@/components/ActivityFeed";
 const Dashboard = () => {
   return (
     <div className="flex h-screen overflow-hidden">
-      {/* Sidebar */}
       <Sidebar />
       
-      {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Header */}
         <Header />
         
-        {/* Dashboard Main Content */}
         <div className="flex-1 overflow-y-auto p-6">
-          {/* Dashboard header */}
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-semibold text-gray-800">Dashboard</h2>
             <div className="flex items-center">
@@ -86,24 +81,17 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* Dashboard grid */}
           <div className="grid grid-cols-12 gap-6">
-            {/* Anatomy Section */}
             <AnatomySection />
 
-            {/* Health Status Cards */}
             <HealthStatusCards />
 
-            {/* Calendar View */}
             <CalendarView />
 
-            {/* Activity Feed */}
             <ActivityFeed />
 
-            {/* Appointment Cards */}
             <AppointmentCards />
 
-            {/* Upcoming Schedule */}
             <UpcomingSchedule />
           </div>
         </div>

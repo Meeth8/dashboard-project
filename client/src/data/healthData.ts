@@ -6,8 +6,8 @@ export const healthData = {
       healthStatus: "healthy",
       icon: "bone",
       position: {
-        top: "120px",
-        left: "50%",
+        top: "180px",
+        left: "52%",
         transform: "translateX(-115%)"
       }
     },
@@ -17,8 +17,8 @@ export const healthData = {
       healthStatus: "good",
       icon: "heart",
       position: {
-        bottom: "60px",
-        left: "50%",
+        top: "60px",
+        left: "33%",
         transform: "translateX(-75%)"
       }
     }
