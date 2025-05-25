@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { healthData } from "@/data/healthData";
-import { LucideHeart, User, ActivitySquare } from "lucide-react";
+import { Heart, Droplets, Dumbbell } from "lucide-react";
 
 const HealthStatusCards = () => {
   return (
@@ -9,19 +9,19 @@ const HealthStatusCards = () => {
         <div key={part.id} className="bg-white rounded-2xl p-5 flex items-center">
           <div className="mr-4">
             {part.type === 'lungs' && (
-              <ActivitySquare 
+              <Droplets 
                 className={`h-8 w-8 ${part.healthStatus < 50 ? 'text-destructive' : 'text-primary'}`}
                 strokeWidth={2}
               />
             )}
             {part.type === 'teeth' && (
-              <User 
+              <Heart 
                 className={`h-8 w-8 ${part.healthStatus < 50 ? 'text-destructive' : 'text-primary'}`}
                 strokeWidth={2}
               />
             )}
             {part.type === 'bone' && (
-              <LucideHeart 
+              <Dumbbell 
                 className={`h-8 w-8 ${part.healthStatus < 50 ? 'text-destructive' : 'text-primary'}`}
                 strokeWidth={2}
               />

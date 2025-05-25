@@ -2,7 +2,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { appointments } from "@/data/appointments";
 import { Eye, Heart, Brain, Syringe } from "lucide-react";
 
-const AppointmentCard = ({ appointment }) => {
+interface AppointmentProps {
+  title: string;
+  day: string;
+  time: string;
+  icon: string;
+}
+
+const AppointmentCard = ({ appointment }: { appointment: AppointmentProps }) => {
   return (
     <div className="bg-blue-50 rounded-xl p-4">
       <div className="flex justify-between">
