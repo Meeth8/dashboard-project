@@ -97,14 +97,14 @@ const Dashboard = () => {
             {/* Calendar View */}
             <CalendarView />
 
-            {/* Upcoming Schedule */}
-            <UpcomingSchedule />
+            {/* Activity Feed */}
+            <ActivityFeed />
 
             {/* Appointment Cards */}
             <AppointmentCards />
 
-            {/* Activity Feed */}
-            <ActivityFeed />
+            {/* Upcoming Schedule */}
+            <UpcomingSchedule />
           </div>
         </div>
       </div>
