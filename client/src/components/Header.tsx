@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input";
 const Header = () => {
   return (
     <header className="bg-white border-b border-gray-100 py-4 px-6 flex items-center justify-between">
-      <div className="flex-1 max-w-xl">
-        <div className="relative">
+      <div className="flex-1 max-w-xl flex items-center">
+        <div className="relative flex-grow">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4 text-gray-400 absolute left-3 top-3"
@@ -26,9 +26,7 @@ const Header = () => {
             placeholder="Search"
           />
         </div>
-      </div>
-      <div className="flex items-center space-x-4">
-        <button className="relative p-2">
+        <button className="relative p-2 ml-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-gray-600"
@@ -45,6 +43,8 @@ const Header = () => {
           </svg>
           <span className="absolute top-1 right-1 h-2 w-2 bg-primary rounded-full"></span>
         </button>
+      </div>
+      <div className="flex items-center space-x-4">
         <div className="h-10 w-10 rounded-lg bg-primary flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
