@@ -2,9 +2,9 @@ export const healthData = {
   indicators: [
     {
       id: 1,
-      label: "Healthy Heart",
+      label: "Healthy Leg",
       healthStatus: "healthy",
-      icon: "heart",
+      icon: "bone",
       position: {
         top: "120px",
         left: "50%",
@@ -13,9 +13,9 @@ export const healthData = {
     },
     {
       id: 2,
-      label: "Healthy Leg",
+      label: "Healthy Heart",
       healthStatus: "good",
-      icon: "bone",
+      icon: "heart",
       position: {
         bottom: "60px",
         left: "50%",
