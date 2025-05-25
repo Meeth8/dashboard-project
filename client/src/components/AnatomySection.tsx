@@ -48,7 +48,7 @@ const AnatomySection = () => {
               top: indicator.position.top,
               left: indicator.position.left,
               transform: indicator.position.transform,
-              backgroundColor: indicator.healthStatus === 'healthy' ? '#38b249' : indicator.healthStatus === 'unhealthy' ? '#ff3e3e' : '#00c9c8'
+              backgroundColor: indicator.label === 'Healthy Heart' ? '#38b249' : indicator.label === 'Healthy Leg' ? '#00c9c8' : '#ff3e3e'
             }}
           >
             {indicator.icon === 'heart' && (
