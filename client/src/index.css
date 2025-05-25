@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215 16% 47%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 180 100% 39%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 237 61% 52%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222 47% 11%;
+  --destructive: 0 100% 62%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 215 20.2% 65.1%;
+  --radius: 0.5rem;
+  --chart-1: 180 100% 39%;
+  --chart-2: 237 61% 52%;
+  --chart-3: 0 0% 90%;
+  --chart-4: 0 100% 62%;
+  --chart-5: 120 100% 33%;
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 215 16% 47%;
+  --sidebar-primary: 180 100% 39%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 214 32% 91%;
+  --sidebar-accent-foreground: 222 47% 11%;
+  --sidebar-border: 214 32% 91%;
+  --sidebar-ring: 215 20.2% 65.1%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom components */
+.sidebar-link {
+  @apply flex items-center py-3 px-6 text-gray-500 hover:text-gray-800 transition-colors duration-200;
+}
+
+.sidebar-link.active {
+  @apply text-primary border-l-4 border-primary pl-5;
+}
+
+.health-indicator {
+  @apply absolute z-10 rounded-lg px-3 py-1 text-white font-semibold text-sm flex items-center shadow-md;
+}
+
+.calendar-cell {
+  @apply py-2 border-r border-b border-gray-100 text-center;
+}
+
+.calendar-cell:last-child {
+  @apply border-r-0;
+}
+
+.calendar-row:last-child .calendar-cell {
+  @apply border-b-0;
+}
+
+.appointment-block {
+  @apply rounded-md text-xs px-1 py-1 text-center;
+}
+
+.activity-bar {
+  @apply w-2 rounded-full;
+}
